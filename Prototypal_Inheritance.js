@@ -86,4 +86,19 @@ let head = {
    console.log( table.money );// undefined
    console.log( bed.money );// undefined
 
+// Task- Where does it write?
+let animal1= {
+    eat() {
+      this.full = true;
+    }
+  };
+  
+  let rabbit1 = {
+    __proto__: animal1
+  };
+  
+console.log(rabbit1.eat());
+
+
+
 
